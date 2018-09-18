@@ -1,4 +1,7 @@
-# UploadIcon Add-on for Vaadin 8
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/uploadbutton-add-on)
+[![Stars on Vaadin Directory](https://img.shields.io/vaadin-directory/star/uploadbutton-add-on.svg)](https://vaadin.com/directory/component/uploadbutton-add-on)
+
+# UploadButton Add-on for Vaadin 8
 
 UploadButton is a UI component add-on for Vaadin 8.
 
