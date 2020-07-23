@@ -59,11 +59,6 @@ public class UploadButtonConnector extends UploadConnector {
         }
     }
 
-    @OnStateChange({ "caption", "captionAsHtml" })
-    void setCaption() {
-        VCaption.setCaptionText(getWidget().submitButton.captionElement, getState());
-    }
-
     @OnStateChange("iconAltText")
     void setIconAltText() {
         if (getWidget().submitButton.icon != null) {
@@ -88,22 +83,7 @@ public class UploadButtonConnector extends UploadConnector {
         final String action = client
                 .translateVaadinUri(uidl.getStringVariable("action"));
         upload.element.setAction(action);
-        if (uidl.hasAttribute("buttoncaption")) {
-        	if (getState().captionAsHtml) {
-        		upload.submitButton
-                    .setHtml(uidl.getStringAttribute("buttoncaption"));
-        	} else { 
-                upload.submitButton
-                	.setText(uidl.getStringAttribute("buttoncaption"));
-        	}
-            if (uidl.hasAttribute("buttonstylename")) {
-                upload.submitButton.setStyleName(
-                        uidl.getStringAttribute("buttonstylename"));
-            }
-            upload.submitButton.setVisible(true);
-        } else {
-            upload.submitButton.setVisible(false);
-        }
+
         upload.fu.setName(upload.paintableId + "_file");
 
         if (!isEnabled()) {

@@ -33,11 +33,6 @@ public class UploadButton extends com.vaadin.ui.Upload {
         return (UploadButtonState) super.getState();
     }
     
-    @Override
-    public void setCaption(String caption) {
-    	setButtonCaption(caption);
-    }
-    
     /**
      * Sets the component's icon and alt text.
      * <p>

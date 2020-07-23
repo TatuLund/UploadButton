@@ -5,7 +5,7 @@
 	<groupId>org.vaadin</groupId>
 	<artifactId>uploadbutton-demo</artifactId>
 	<packaging>war</packaging>
-	<version>0.1.0</version>
+	<version>0.1.1</version>
 	<name>UploadButton Add-on Demo</name>
 
 	<prerequisites>
@@ -16,8 +16,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<vaadin.version>8.5.1</vaadin.version>
-		<vaadin.plugin.version>8.5.1</vaadin.plugin.version>
+		<vaadin.version>8.11.1</vaadin.version>
+		<vaadin.plugin.version>8.11.1</vaadin.plugin.version>
 		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
 	</properties>
 
@@ -112,6 +112,7 @@
 					<!-- You are free to mark this as permanently ignored in Eclipse -->
 					<execution>
 						<configuration>
+						    <style>OBF</style>
 							<!-- if you don't specify any modules, the plugin will find them -->
 						</configuration>
 						<goals>

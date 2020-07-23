@@ -58,6 +58,9 @@ Debugging client side code in the uploadicon-demo project:
  
 ## Release notes
 
+### Version 0.1.1
+- Fixed Vaadin 8.11 compatibility (Upload itself can handle html captions now)
+
 ### Version 0.1.0
 - First version. See: https://github.com/vaadin/framework/issues/11120
 
